@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Kappo Hotel & SUITES`,
+    // siteUrl: `https://www.gatsbyjs.com`,
+    description: `Excellent Customer Experience within high standard facilities`,
+  },
+  plugins: ["gatsby-plugin-sass"],
 }
