@@ -104,7 +104,7 @@ const Home = () => {
           <Row>
             <Col>
               <img
-                src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
+                src="https://thegeorgelagos.com/wp-content/uploads/2018/10/Deluxe-Suite-506-b-768x513.jpg"
                 alt="standard-room"
                 className="img-fluid"
               />
@@ -131,7 +131,7 @@ const Home = () => {
           <Row>
             <Col>
               <img
-                src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
+                src="https://thegeorgelagos.com/wp-content/uploads/2018/08/Deluxe-Room-101c-768x513.jpg"
                 alt="standard-room"
                 className="img-fluid"
               />
