@@ -46,7 +46,7 @@ const Home = () => {
           </a>
           <a
             className="nav-link"
-            id="nav-classic-room"
+            id="nav-classic-room-tab"
             data-toggle="tab"
             href="#nav-classic-room"
             role="tab"
