@@ -75,7 +75,7 @@ const Home = () => {
           role="tabpanel"
           aria-labelledby="nav-standard-room-tab"
         >
-          <Row>
+          <Row style={{ border: "solid" }} className="p-2 m-2">
             <Col>
               <img
                 src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
@@ -101,11 +101,11 @@ const Home = () => {
           role="tabpanel"
           aria-labelledby="nav-classic-room-tab"
         >
-          <Row>
+          <Row style={{ border: "solid" }} className="p-2 m-2">
             <Col>
               <img
                 src="https://thegeorgelagos.com/wp-content/uploads/2018/10/Deluxe-Suite-506-b-768x513.jpg"
-                alt="standard-room"
+                alt="classic-room"
                 className="img-fluid"
               />
             </Col>
@@ -128,7 +128,7 @@ const Home = () => {
           aria-labelledby="nav-deluxe-room-tab"
         >
           Deluxe Room
-          <Row>
+          <Row style={{ border: "solid" }} className="p-2 m-2">
             <Col>
               <img
                 src="https://thegeorgelagos.com/wp-content/uploads/2018/08/Deluxe-Room-101c-768x513.jpg"
