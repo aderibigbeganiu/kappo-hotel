@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link
               className={navStyle.navItem}
               activeClassName={navStyle.activeNavItem}
-              to="/about"
+              to="/abouts"
             >
               ABOUT US
             </Link>
