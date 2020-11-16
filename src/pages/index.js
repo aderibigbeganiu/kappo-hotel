@@ -84,14 +84,14 @@ const Home = () => {
               }}
               className="p-2 m-2"
             >
-              <Col>
+              <Col md={6}>
                 <img
                   src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
                   alt="standard-room"
                   className="img-fluid"
                 />
               </Col>
-              <Col>
+              <Col md={6}>
                 <h4>Standard Room</h4>
                 <p>From ₦30,000.00 / Night</p>
                 <p>
@@ -117,14 +117,14 @@ const Home = () => {
               }}
               className="p-2 m-2"
             >
-              <Col>
+              <Col md={6}>
                 <img
                   src="https://thegeorgelagos.com/wp-content/uploads/2018/10/Deluxe-Suite-506-b-768x513.jpg"
                   alt="classic-room"
                   className="img-fluid"
                 />
               </Col>
-              <Col>
+              <Col md={6}>
                 <h4>Classic Room</h4>
                 <p>From ₦50,000.00 / Night</p>
                 <p>
@@ -150,14 +150,14 @@ const Home = () => {
               }}
               className="p-2 m-2"
             >
-              <Col>
+              <Col md={6}>
                 <img
                   src="https://thegeorgelagos.com/wp-content/uploads/2018/08/Deluxe-Room-101c-768x513.jpg"
                   alt="standard-room"
                   className="img-fluid"
                 />
               </Col>
-              <Col>
+              <Col md={6}>
                 <h4>Deluxe Room</h4>
                 <p>From ₦80,000.00 / Night</p>
                 <p>
