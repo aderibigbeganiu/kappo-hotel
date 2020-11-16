@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../Components/Layout"
-import { Col, Row } from "react-bootstrap"
+import { Button, Col, Row } from "react-bootstrap"
 import indexStyle from "./indexStyle.module.scss"
 const Home = () => {
   return (
@@ -35,63 +35,118 @@ const Home = () => {
         <div className="nav nav-tabs" id="nav-tab" role="tablist">
           <a
             className="nav-link active"
-            id="nav-home-tab"
+            id="nav-standard-room-tab"
             data-toggle="tab"
-            href="#nav-home"
+            href="#nav-standard-room"
             role="tab"
-            aria-controls="nav-home"
+            aria-controls="nav-standard-room"
             aria-selected="true"
           >
-            Home
+            Standard Room
           </a>
           <a
             className="nav-link"
-            id="nav-profile-tab"
+            id="nav-classic-room"
             data-toggle="tab"
-            href="#nav-profile"
+            href="#nav-classic-room"
             role="tab"
-            aria-controls="nav-profile"
+            aria-controls="nav-classic-room"
             aria-selected="false"
           >
-            Profile
+            Classic Room
           </a>
           <a
             className="nav-link"
-            id="nav-contact-tab"
+            id="nav-deluxe-room-tab"
             data-toggle="tab"
-            href="#nav-contact"
+            href="#nav-deluxe-room"
             role="tab"
-            aria-controls="nav-contact"
+            aria-controls="nav-deluxe-room"
             aria-selected="false"
           >
-            Contact
+            Deluxe Room
           </a>
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
         <div
           className="tab-pane fade show active"
-          id="nav-home"
+          id="nav-standard-room"
           role="tabpanel"
-          aria-labelledby="nav-home-tab"
+          aria-labelledby="nav-standard-room-tab"
         >
-          Home
+          <Row>
+            <Col>
+              <img
+                src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
+                alt="standard-room"
+                className="img-fluid"
+              />
+            </Col>
+            <Col>
+              <h4>Standard Room</h4>
+              <p>From ₦30,000.00 / Night</p>
+              <p>
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Donec sollicitudin molestie malesuada. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem.
+              </p>
+              <Button varient="primary">Book Now</Button>
+            </Col>
+          </Row>
         </div>
         <div
           className="tab-pane fade"
-          id="nav-profile"
+          id="nav-classic-room"
           role="tabpanel"
-          aria-labelledby="nav-profile-tab"
+          aria-labelledby="nav-classic-room-tab"
         >
-          Profile
+          <Row>
+            <Col>
+              <img
+                src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
+                alt="standard-room"
+                className="img-fluid"
+              />
+            </Col>
+            <Col>
+              <h4>Classic Room</h4>
+              <p>From ₦50,000.00 / Night</p>
+              <p>
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Donec sollicitudin molestie malesuada. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem.
+              </p>
+              <Button varient="primary">Book Now</Button>
+            </Col>
+          </Row>
         </div>
         <div
           className="tab-pane fade"
-          id="nav-contact"
+          id="nav-deluxe-room"
           role="tabpanel"
-          aria-labelledby="nav-contact-tab"
+          aria-labelledby="nav-deluxe-room-tab"
         >
-          Contact
+          Deluxe Room
+          <Row>
+            <Col>
+              <img
+                src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
+                alt="standard-room"
+                className="img-fluid"
+              />
+            </Col>
+            <Col>
+              <h4>Deluxe Room</h4>
+              <p>From ₦80,000.00 / Night</p>
+              <p>
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Donec sollicitudin molestie malesuada. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem.
+              </p>
+              <Button varient="primary">Book Now</Button>
+            </Col>
+          </Row>
         </div>
       </div>
     </Layout>
