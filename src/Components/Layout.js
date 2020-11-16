@@ -35,10 +35,10 @@ const Layout = props => {
           <p className={layoutStyle.coverBtn}>
             <Link
               className="btn btn-primary btn-lg"
-              to="/booking"
+              to="/contact"
               role="button"
             >
-              BOOK NOW
+              CONTACT US
             </Link>
           </p>
         </div>

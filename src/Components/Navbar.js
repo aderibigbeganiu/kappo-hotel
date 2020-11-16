@@ -9,8 +9,8 @@ const Navbar = () => {
         <img
           src="https://kappohotels.com/wp-content/uploads/2020/05/cropped-hotel-LOGO-scaled-1-192x192.jpg"
           alt="home"
-          height="100"
-          width="120"
+          height="80"
+          width="100"
         />
       </Link>
       <button
