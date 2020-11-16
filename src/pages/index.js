@@ -32,7 +32,7 @@ const Home = () => {
         </Col>
       </Row>
       <div className="container">
-        <nav>
+        <nav className="mt-5">
           <div className="nav nav-tabs" id="nav-tab" role="tablist">
             <a
               className="nav-link active"
@@ -77,7 +77,11 @@ const Home = () => {
             aria-labelledby="nav-standard-room-tab"
           >
             <Row
-              style={{ border: "solid", borderWidth: "1px" }}
+              style={{
+                border: "solid",
+                borderWidth: "1px",
+                borderColor: "#453435",
+              }}
               className="p-2 m-2"
             >
               <Col>
@@ -106,7 +110,11 @@ const Home = () => {
             aria-labelledby="nav-classic-room-tab"
           >
             <Row
-              style={{ border: "solid", borderWidth: "1px" }}
+              style={{
+                border: "solid",
+                borderWidth: "1px",
+                borderColor: "#453435",
+              }}
               className="p-2 m-2"
             >
               <Col>
@@ -135,7 +143,11 @@ const Home = () => {
             aria-labelledby="nav-deluxe-room-tab"
           >
             <Row
-              style={{ border: "solid", borderWidth: "1px" }}
+              style={{
+                border: "solid",
+                borderWidth: "1px",
+                borderColor: "#453435",
+              }}
               className="p-2 m-2"
             >
               <Col>
