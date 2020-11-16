@@ -127,7 +127,6 @@ const Home = () => {
           role="tabpanel"
           aria-labelledby="nav-deluxe-room-tab"
         >
-          Deluxe Room
           <Row style={{ border: "solid" }} className="p-2 m-2">
             <Col>
               <img
