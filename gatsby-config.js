@@ -10,5 +10,5 @@ module.exports = {
     // siteUrl: `https://www.gatsbyjs.com`,
     description: `Excellent Customer Experience within high standard facilities`,
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: ["gatsby-plugin-sass", "gatsby-plugin-react-helmet"],
 }
