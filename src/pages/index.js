@@ -93,7 +93,7 @@ const Home = () => {
                   className="img-fluid"
                 />
               </Col>
-              <Col md={6} className="mt-5">
+              <Col md={6} className="mt-5 mb-2">
                 <h4>Standard Room</h4>
                 <p>From ₦30,000.00 / Night</p>
                 <p>
@@ -119,7 +119,7 @@ const Home = () => {
                   className="img-fluid"
                 />
               </Col>
-              <Col md={6} className="mt-5">
+              <Col md={6} className="mt-5 mb-2">
                 <h4>Classic Room</h4>
                 <p>From ₦50,000.00 / Night</p>
                 <p>
@@ -145,7 +145,7 @@ const Home = () => {
                   className="img-fluid"
                 />
               </Col>
-              <Col md={6} className="mt-5">
+              <Col md={6} className="mt-5 mb-2">
                 <h4>Deluxe Room</h4>
                 <p>From ₦80,000.00 / Night</p>
                 <p>
