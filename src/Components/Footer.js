@@ -54,22 +54,22 @@ const Footer = () => {
           <ul className="list-inline">
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter" style={{ width: "15px" }}></i>
               </span>
             </li>
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f" style={{ width: "15px" }}></i>
               </span>
             </li>
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-youtube"></i>
+                <i class="fab fa-youtube" style={{ width: "15px" }}></i>
               </span>
             </li>
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in" style={{ width: "15px" }}></i>
               </span>
             </li>
           </ul>
