@@ -52,10 +52,26 @@ const Footer = () => {
             />
           </Link>
           <ul className="list-inline">
-            <li className="list-inline-item text-white">twitter</li>
-            <li className="list-inline-item text-white">facebook</li>
-            <li className="list-inline-item text-white">youtube</li>
-            <li className="list-inline-item text-white">linkedin</li>
+            <li className="list-inline-item text-white">
+              <span className={footerStyle.round}>
+                <i class="fab fa-twitter"></i>
+              </span>
+            </li>
+            <li className="list-inline-item text-white">
+              <span className={footerStyle.round}>
+                <i class="fab fa-facebook-f"></i>
+              </span>
+            </li>
+            <li className="list-inline-item text-white">
+              <span className={footerStyle.round}>
+                <i class="fab fa-youtube"></i>
+              </span>
+            </li>
+            <li className="list-inline-item text-white">
+              <span className={footerStyle.round}>
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+            </li>
           </ul>
         </div>
         <div className="col-12 col-md">
