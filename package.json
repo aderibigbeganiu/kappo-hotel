@@ -1,7 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "kappo-hotel",
+  "homepage": "https://www.kappohotel.com",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Excellent Customer Experience within high standard facilities",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {

@@ -12,11 +12,8 @@
 }
 
 .cover-text {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 150px 0px 0px 0px;
 }
 .title {
   font-family: "Poppins", sans-serif;
@@ -42,8 +39,4 @@
 }
 
 .cover-btn {
-  width: 270px;
-  height: 92px;
-  left: 413px;
-  top: 620px;
 }
