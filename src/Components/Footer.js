@@ -8,30 +8,37 @@ const Footer = () => {
       <div className="row">
         <div className="col-12 col-md text-left">
           <ul className="list-unstyled text-small">
-            <a
-              className="text-white m-1"
-              href="https://goo.gl/maps/wvynpGGm28codXdZ6"
-              target="blank"
-            >
-              <i class="fal fa-map-marker-alt"></i>
-              <li>Shop 3 Block N Joke Plaza Bodija, Ibadan Oyo</li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="mailto:info@lakerscreative.com"
-              target="blank"
-            >
-              <i class="far fa-envelope-open"></i>
-              <li>info@lakerscreative.com</li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="tel:+2347047434853"
-              target="blank"
-            >
-              <i class="fal fa-phone"></i>
-              <li>+2347047434853</li>
-            </a>
+            <li className="m-3">
+              <a
+                className="text-white"
+                href="https://goo.gl/maps/wvynpGGm28codXdZ6"
+                target="blank"
+              >
+                <i class="fal fa-map-marker-alt"></i>
+                Shop 3 Block N Joke Plaza Bodija, Ibadan Oyo
+              </a>
+            </li>
+            <li className="m-3">
+              <a
+                className="text-white"
+                href="mailto:info@lakerscreative.com"
+                target="blank"
+              >
+                <i class="far fa-envelope-open"></i>
+                info@lakerscreative.com
+              </a>
+            </li>
+
+            <li className="m-3">
+              <a
+                className="text-white"
+                href="tel:+2347047434853"
+                target="blank"
+              >
+                <i class="fal fa-phone"></i>
+                +2347047434853
+              </a>
+            </li>
           </ul>
         </div>
         <div className="col-12 col-md text-center">
@@ -51,17 +58,23 @@ const Footer = () => {
             <li className="list-inline-item text-white">linkedin</li>
           </ul>
         </div>
-        <div className="col-12 col-md text-right">
+        <div className="col-12 col-md">
           <ul className="list-unstyled text-small">
-            <Link className="text-white m-1" to="/about">
-              <li>About</li>
-            </Link>
-            <Link className="text-white m-1" to="/contact">
-              <li>Contact</li>
-            </Link>
-            <Link className="text-white m-1" to="/services">
-              <li>Services</li>
-            </Link>
+            <li className="m-3">
+              <Link className="text-white" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="m-3">
+              <Link className="text-white" to="/contact">
+                Contact
+              </Link>
+            </li>
+            <li className="m-3">
+              <Link className="text-white" to="/services">
+                Services
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
