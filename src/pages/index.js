@@ -32,6 +32,7 @@ const Home = () => {
         </Col>
       </Row>
       <div className="container">
+        <h1 className={indexStyle.accommodation}>Accommodation</h1>
         <nav className="mt-5">
           <div className="nav nav-tabs" id="nav-tab" role="tablist">
             <a
@@ -84,7 +85,7 @@ const Home = () => {
             role="tabpanel"
             aria-labelledby="nav-standard-room-tab"
           >
-            <Row className="p-2 m-2">
+            <Row className="m-2" style={{ backgroundColor: "#E5E5E5" }}>
               <Col md={6}>
                 <img
                   src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
@@ -92,7 +93,7 @@ const Home = () => {
                   className="img-fluid"
                 />
               </Col>
-              <Col md={6}>
+              <Col md={6} className="mt-5">
                 <h4>Standard Room</h4>
                 <p>From ₦30,000.00 / Night</p>
                 <p>
@@ -110,7 +111,7 @@ const Home = () => {
             role="tabpanel"
             aria-labelledby="nav-classic-room-tab"
           >
-            <Row className="p-2 m-2">
+            <Row className="m-2" style={{ backgroundColor: "#E5E5E5" }}>
               <Col md={6}>
                 <img
                   src="https://thegeorgelagos.com/wp-content/uploads/2018/10/Deluxe-Suite-506-b-768x513.jpg"
@@ -118,7 +119,7 @@ const Home = () => {
                   className="img-fluid"
                 />
               </Col>
-              <Col md={6}>
+              <Col md={6} className="mt-5">
                 <h4>Classic Room</h4>
                 <p>From ₦50,000.00 / Night</p>
                 <p>
@@ -136,7 +137,7 @@ const Home = () => {
             role="tabpanel"
             aria-labelledby="nav-deluxe-room-tab"
           >
-            <Row className="p-2 m-2">
+            <Row className="m-2" style={{ backgroundColor: "#E5E5E5" }}>
               <Col md={6}>
                 <img
                   src="https://thegeorgelagos.com/wp-content/uploads/2018/08/Deluxe-Room-101c-768x513.jpg"
@@ -144,7 +145,7 @@ const Home = () => {
                   className="img-fluid"
                 />
               </Col>
-              <Col md={6}>
+              <Col md={6} className="mt-5">
                 <h4>Deluxe Room</h4>
                 <p>From ₦80,000.00 / Night</p>
                 <p>

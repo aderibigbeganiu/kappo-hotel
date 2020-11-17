@@ -14,7 +14,7 @@ const Footer = () => {
                 href="https://goo.gl/maps/wvynpGGm28codXdZ6"
                 target="blank"
               >
-                <i class="fal fa-map-marker-alt"></i>
+                <i className="fas fa-map-marker-alt"></i>
                 Shop 3 Block N Joke Plaza Bodija, Ibadan Oyo
               </a>
             </li>
@@ -24,7 +24,7 @@ const Footer = () => {
                 href="mailto:info@lakerscreative.com"
                 target="blank"
               >
-                <i class="far fa-envelope-open"></i>
+                <i class="fas fa-envelope"></i>
                 info@lakerscreative.com
               </a>
             </li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 href="tel:+2347047434853"
                 target="blank"
               >
-                <i class="fal fa-phone"></i>
+                <i class="fas fa-phone-alt"></i>
                 +2347047434853
               </a>
             </li>
