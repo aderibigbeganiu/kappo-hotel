@@ -76,98 +76,85 @@ const Home = () => {
             role="tabpanel"
             aria-labelledby="nav-standard-room-tab"
           >
-            <Row
+            <div
               style={{
                 border: "solid",
                 borderWidth: "1px",
                 borderColor: "#453435",
               }}
-              className="p-2 m-2"
             >
-              <Col md={6}>
-                <img
-                  src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
-                  alt="standard-room"
-                  className="img-fluid"
-                />
-              </Col>
-              <Col md={6}>
-                <h4>Standard Room</h4>
-                <p>From ₦30,000.00 / Night</p>
-                <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Donec sollicitudin molestie malesuada. Curabitur arcu erat,
-                  accumsan id imperdiet et, porttitor at sem.
-                </p>
-                <Button varient="primary">Book Now</Button>
-              </Col>
-            </Row>
-          </div>
-          <div
-            className="tab-pane fade"
-            id="nav-classic-room"
-            role="tabpanel"
-            aria-labelledby="nav-classic-room-tab"
-          >
-            <Row
-              style={{
-                border: "solid",
-                borderWidth: "1px",
-                borderColor: "#453435",
-              }}
-              className="p-2 m-2"
+              <Row className="p-2 m-2">
+                <Col md={6}>
+                  <img
+                    src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
+                    alt="standard-room"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col md={6}>
+                  <h4>Standard Room</h4>
+                  <p>From ₦30,000.00 / Night</p>
+                  <p>
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    Donec sollicitudin molestie malesuada. Curabitur arcu erat,
+                    accumsan id imperdiet et, porttitor at sem.
+                  </p>
+                  <Button varient="primary">Book Now</Button>
+                </Col>
+              </Row>
+            </div>
+            <div
+              className="tab-pane fade"
+              id="nav-classic-room"
+              role="tabpanel"
+              aria-labelledby="nav-classic-room-tab"
             >
-              <Col md={6}>
-                <img
-                  src="https://thegeorgelagos.com/wp-content/uploads/2018/10/Deluxe-Suite-506-b-768x513.jpg"
-                  alt="classic-room"
-                  className="img-fluid"
-                />
-              </Col>
-              <Col md={6}>
-                <h4>Classic Room</h4>
-                <p>From ₦50,000.00 / Night</p>
-                <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Donec sollicitudin molestie malesuada. Curabitur arcu erat,
-                  accumsan id imperdiet et, porttitor at sem.
-                </p>
-                <Button varient="primary">Book Now</Button>
-              </Col>
-            </Row>
-          </div>
-          <div
-            className="tab-pane fade"
-            id="nav-deluxe-room"
-            role="tabpanel"
-            aria-labelledby="nav-deluxe-room-tab"
-          >
-            <Row
-              style={{
-                border: "solid",
-                borderWidth: "1px",
-                borderColor: "#453435",
-              }}
-              className="p-2 m-2"
+              <Row className="p-2 m-2">
+                <Col md={6}>
+                  <img
+                    src="https://thegeorgelagos.com/wp-content/uploads/2018/10/Deluxe-Suite-506-b-768x513.jpg"
+                    alt="classic-room"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col md={6}>
+                  <h4>Classic Room</h4>
+                  <p>From ₦50,000.00 / Night</p>
+                  <p>
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    Donec sollicitudin molestie malesuada. Curabitur arcu erat,
+                    accumsan id imperdiet et, porttitor at sem.
+                  </p>
+                  <Button varient="primary">Book Now</Button>
+                </Col>
+              </Row>
+            </div>
+            <div
+              className="tab-pane fade"
+              id="nav-deluxe-room"
+              role="tabpanel"
+              aria-labelledby="nav-deluxe-room-tab"
             >
-              <Col md={6}>
-                <img
-                  src="https://thegeorgelagos.com/wp-content/uploads/2018/08/Deluxe-Room-101c-768x513.jpg"
-                  alt="standard-room"
-                  className="img-fluid"
-                />
-              </Col>
-              <Col md={6}>
-                <h4>Deluxe Room</h4>
-                <p>From ₦80,000.00 / Night</p>
-                <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Donec sollicitudin molestie malesuada. Curabitur arcu erat,
-                  accumsan id imperdiet et, porttitor at sem.
-                </p>
-                <Button varient="primary">Book Now</Button>
-              </Col>
-            </Row>
+              <Row className="p-2 m-2">
+                <Col md={6}>
+                  <img
+                    src="https://thegeorgelagos.com/wp-content/uploads/2018/08/Deluxe-Room-101c-768x513.jpg"
+                    alt="standard-room"
+                    className="img-fluid"
+                  />
+                </Col>
+                <Col md={6}>
+                  <h4>Deluxe Room</h4>
+                  <p>From ₦80,000.00 / Night</p>
+                  <p>
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    Donec sollicitudin molestie malesuada. Curabitur arcu erat,
+                    accumsan id imperdiet et, porttitor at sem.
+                  </p>
+                  <Button varient="primary">Book Now</Button>
+                </Col>
+              </Row>
+            </div>
           </div>
         </div>
       </div>

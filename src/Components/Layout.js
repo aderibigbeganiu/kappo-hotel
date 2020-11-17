@@ -22,7 +22,7 @@ const Layout = props => {
     }
   `)
   return (
-    <div>
+    <div className={layoutStyle.container}>
       <Jumbotron className={layoutStyle.cover}>
         <Navbar />
         <div className={layoutStyle.coverText}>
@@ -43,7 +43,7 @@ const Layout = props => {
           </p>
         </div>
       </Jumbotron>
-      {props.children}
+      <div className={layoutStyle.content}>{props.children}</div>
       <Footer />
       <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
