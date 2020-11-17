@@ -44,11 +44,11 @@ const Footer = () => {
               height="100"
             />
           </Link>
-          <ul>
-            <li>twitter</li>
-            <li>facebook</li>
-            <li>youtube</li>
-            <li>linkedin</li>
+          <ul className="list-inline">
+            <li className="list-inline-item text-white">twitter</li>
+            <li className="list-inline-item text-white">facebook</li>
+            <li className="list-inline-item text-white">youtube</li>
+            <li className="list-inline-item text-white">linkedin</li>
           </ul>
         </div>
         <div className="col-12 col-md text-right">
