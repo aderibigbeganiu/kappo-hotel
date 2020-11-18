@@ -92,6 +92,7 @@ const Navbar = () => {
           aria-controls="navbarsExample01"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{ outline: "none" }}
         >
           <span class="navbar-toggler-icon"></span>
         </button>
