@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(n,t,e){"use strict";e.r(t);var a=e("q1tI"),o=e.n(a),u=e("JLE3");t.default=function(){return o.a.createElement(u.a,{name:"About"},"About")}}}]);
+//# sourceMappingURL=component---src-pages-about-js-9e91f6a2b6c3cc93390c.js.map
