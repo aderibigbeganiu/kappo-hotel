@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import navStyle from "./navStyle.module.scss"
 
-const Navbar = () => {
+const HomeNavbar = () => {
   return (
     <>
       <span className="d-none d-md-block">
@@ -27,13 +27,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
+                <a
                   className={navStyle.navItem}
                   activeClassName={navStyle.activeNavItem}
-                  to="../#gallery"
+                  href="#gallery"
                 >
                   GALLERY
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <Link
@@ -105,9 +105,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item active">
-              <Link className="nav-link" to="../#gallery">
+              <a className="nav-link" href="#gallery">
                 GALLERY
-              </Link>
+              </a>
             </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/about/">
@@ -136,4 +136,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default HomeNavbar

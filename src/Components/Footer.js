@@ -20,7 +20,7 @@ const Footer = () => {
                 target="blank"
                 style={{ textDecoration: "none" }}
               >
-                <i class="fas fa-envelope m-2"></i>
+                <i className="fas fa-envelope m-2"></i>
                 info@kappohotel.com
               </a>
             </li>
@@ -33,7 +33,7 @@ const Footer = () => {
                   target="blank"
                   style={{ textDecoration: "none" }}
                 >
-                  <i class="fas fa-phone-alt m-2"></i>
+                  <i className="fas fa-phone-alt m-2"></i>
                   09040075259
                 </a>
               </p>
@@ -44,7 +44,7 @@ const Footer = () => {
                   target="blank"
                   style={{ textDecoration: "none" }}
                 >
-                  <i class="fas fa-phone-alt m-2"></i>
+                  <i className="fas fa-phone-alt m-2"></i>
                   09029925550
                 </a>
               </p>
@@ -64,22 +64,22 @@ const Footer = () => {
           <ul className="list-inline">
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-twitter" style={{ width: "15px" }}></i>
+                <i className="fab fa-twitter" style={{ width: "15px" }}></i>
               </span>
             </li>
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-facebook-f" style={{ width: "15px" }}></i>
+                <i className="fab fa-facebook-f" style={{ width: "15px" }}></i>
               </span>
             </li>
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-youtube" style={{ width: "15px" }}></i>
+                <i className="fab fa-youtube" style={{ width: "15px" }}></i>
               </span>
             </li>
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
-                <i class="fab fa-linkedin-in" style={{ width: "15px" }}></i>
+                <i className="fab fa-linkedin-in" style={{ width: "15px" }}></i>
               </span>
             </li>
           </ul>

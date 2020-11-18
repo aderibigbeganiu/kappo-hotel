@@ -1,11 +1,11 @@
 import React from "react"
 import Footer from "./Footer"
-import Navbar from "./Navbar"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import homelayoutStyle from "./homeLayout.module.scss"
 import { Jumbotron } from "react-bootstrap"
 import { Helmet } from "react-helmet"
+import HomeNavbar from "./HomeNavbar"
 
 const HomeLayout = props => {
   const data = useStaticQuery(graphql`
@@ -39,7 +39,7 @@ const HomeLayout = props => {
         ></script>
       </Helmet>
       <Jumbotron className={homelayoutStyle.cover}>
-        <Navbar />
+        <HomeNavbar />
         <div className={homelayoutStyle.coverText}>
           <h1 className={homelayoutStyle.title}>
             {data.site.siteMetadata.title.toUpperCase()}

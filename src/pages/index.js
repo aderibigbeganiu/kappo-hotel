@@ -1,6 +1,7 @@
 import React from "react"
 import { Button, Col, Row } from "react-bootstrap"
 import HomeLayout from "../Components/homeLayout"
+import Gallery from "../Components/gallery"
 import indexStyle from "./indexStyle.module.scss"
 const Home = () => {
   return (
@@ -157,6 +158,9 @@ const Home = () => {
               </Col>
             </Row>
           </div>
+        </div>
+        <div id="gallery" className="m-5">
+          <Gallery />
         </div>
       </div>
     </HomeLayout>
