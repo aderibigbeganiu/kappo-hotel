@@ -1,10 +1,10 @@
 import React from "react"
-import Layout from "../Components/Layout"
 import { Button, Col, Row } from "react-bootstrap"
+import HomeLayout from "../Components/homeLayout"
 import indexStyle from "./indexStyle.module.scss"
 const Home = () => {
   return (
-    <Layout name="Home">
+    <HomeLayout name="Home">
       <Row className={indexStyle.row}>
         <Col md={6} className="p-5">
           <img
@@ -159,7 +159,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </HomeLayout>
   )
 }
 

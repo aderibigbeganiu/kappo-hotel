@@ -2,13 +2,24 @@ import React from "react"
 import Footer from "./Footer"
 import Navbar from "./Navbar"
 import "bootstrap/dist/css/bootstrap.min.css"
-import layoutStyle from "./layout.module.scss"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import homelayoutStyle from "./homeLayout.module.scss"
 import { Jumbotron } from "react-bootstrap"
 import { Helmet } from "react-helmet"
 
-const Layout = props => {
+const HomeLayout = props => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+          description
+        }
+      }
+    }
+  `)
   return (
-    <div className={layoutStyle.container}>
+    <div className={homelayoutStyle.container}>
       <Helmet title={`${props.name} • KAPPO HOTEL & SUITES`} defer={false}>
         <link
           rel="stylesheet"
@@ -27,13 +38,30 @@ const Layout = props => {
           crossorigin="anonymous"
         ></script>
       </Helmet>
-      <Jumbotron className={layoutStyle.cover}>
+      <Jumbotron className={homelayoutStyle.cover}>
         <Navbar />
+        <div className={homelayoutStyle.coverText}>
+          <h1 className={homelayoutStyle.title}>
+            {data.site.siteMetadata.title.toUpperCase()}
+          </h1>
+          <p className={homelayoutStyle.description}>
+            {data.site.siteMetadata.description}
+          </p>
+          <p className={homelayoutStyle.coverBtn}>
+            <Link
+              className="btn btn-primary btn-lg"
+              to="/contact"
+              role="button"
+            >
+              CONTACT US
+            </Link>
+          </p>
+        </div>
       </Jumbotron>
-      <div className="container m-5">{props.children}</div>
+      <div className={homelayoutStyle.content}>{props.children}</div>
       <Footer />
     </div>
   )
 }
 
-export default Layout
+export default HomeLayout
