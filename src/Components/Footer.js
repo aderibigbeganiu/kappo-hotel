@@ -54,7 +54,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-12 col-md text-center order-sm-3">
+        <div className="col-12 col-md text-center">
           <Link to="/">
             <img
               className="mt-5 mb-3"
@@ -88,7 +88,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-12 col-md">
-          <ul className="list-unstyled text-small text-left">
+          <ul className="list-unstyled text-small text-center">
             <li className="m-3">
               <Link className="text-white" to="/about">
                 About
