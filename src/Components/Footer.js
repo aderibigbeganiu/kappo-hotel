@@ -14,8 +14,9 @@ const Footer = () => {
                 href="https://goo.gl/maps/wvynpGGm28codXdZ6"
                 target="blank"
               >
-                <i className="fas fa-map-marker-alt"></i>
-                Shop 3 Block N Joke Plaza Bodija, Ibadan Oyo
+                <i className="fas fa-map-marker-alt m-2"></i>3 Moshalashi Close,
+                Beside Anifowose Upholstery, off Onilude street, Sango Ile-dudu,
+                Badagry, Lagos
               </a>
             </li>
             <li className="m-3">
@@ -24,24 +25,36 @@ const Footer = () => {
                 href="mailto:info@lakerscreative.com"
                 target="blank"
               >
-                <i class="fas fa-envelope"></i>
-                info@lakerscreative.com
+                <i class="fas fa-envelope m-2"></i>
+                info@kappohotel.com
               </a>
             </li>
 
             <li className="m-3">
-              <a
-                className="text-white"
-                href="tel:+2347047434853"
-                target="blank"
-              >
-                <i class="fas fa-phone-alt"></i>
-                +2347047434853
-              </a>
+              <p>
+                <a
+                  className="text-white"
+                  href="tel:+2349040075259"
+                  target="blank"
+                >
+                  <i class="fas fa-phone-alt m-2"></i>
+                  09040075259
+                </a>
+              </p>
+              <p>
+                <a
+                  className="text-white"
+                  href="tel:+2349029925550"
+                  target="blank"
+                >
+                  <i class="fas fa-phone-alt m-2"></i>
+                  09029925550
+                </a>
+              </p>
             </li>
           </ul>
         </div>
-        <div className="col-12 col-md text-center">
+        <div className="col-12 col-md text-center order-sm-3">
           <Link to="/">
             <img
               className="mt-5 mb-3"
@@ -75,7 +88,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-12 col-md">
-          <ul className="list-unstyled text-small">
+          <ul className="list-unstyled text-small text-left">
             <li className="m-3">
               <Link className="text-white" to="/about">
                 About
