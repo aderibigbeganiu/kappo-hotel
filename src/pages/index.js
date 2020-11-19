@@ -5,8 +5,9 @@ import Gallery from "../Components/gallery"
 import indexStyle from "./indexStyle.module.scss"
 import SEO from "../Components/seo"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "../../static/favicon.ico"
-const Home = () => {
+import Img from "../../static/favicon.jpg"
+import aboutUs from "../../static/about-us.png"
+const Home = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -20,15 +21,22 @@ const Home = () => {
       }
     }
   `)
-  const description = data.site.siteMetadata.title
+  const description = data.site.siteMetadata.description
+  const title = data.site.siteMetadata.title
   const image = Img
+  const pathname = location.pathname
   return (
     <HomeLayout name="Home">
-      <SEO title="Home" description={description} image={image} />
+      <SEO
+        title={title}
+        description={description}
+        image={image}
+        pathname={pathname}
+      />
       <Row className={indexStyle.row}>
         <Col md={6} className="p-5">
           <img
-            src="https://thegeorgelagos.com/wp-content/uploads/2018/10/about-us-1.png"
+            src={aboutUs}
             alt="fancy-img"
             className="img-fluid"
             height="652"

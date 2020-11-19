@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Kappo Hotel & SUITES`,
+    title: `KAPPO HOTEL & SUITES`,
     siteUrl: `https://www.kappohotel.com`,
     description: `Excellent Customer Experience within high standard facilities`,
     author: `kappohotel`,
