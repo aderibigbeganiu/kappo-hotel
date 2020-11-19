@@ -17,6 +17,7 @@ module.exports = {
       "kappo hotel",
       "kapo hotels",
     ],
+    image: "/logo.jpg",
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-react-helmet"],
 }

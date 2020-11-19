@@ -5,7 +5,6 @@ import Gallery from "../Components/gallery"
 import indexStyle from "./indexStyle.module.scss"
 import SEO from "../Components/seo"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "../../static/favicon.jpg"
 import aboutUs from "../../static/about-us.png"
 const Home = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -17,13 +16,15 @@ const Home = ({ location }) => {
           author
           keywords
           siteUrl
+          image
         }
       }
     }
   `)
   const description = data.site.siteMetadata.description
   const title = data.site.siteMetadata.title
-  const image = Img
+  const image = data.site.siteMetadata.image
+  // const image = Img
   const pathname = location.pathname
   return (
     <HomeLayout name="Home">
@@ -187,7 +188,7 @@ const Home = ({ location }) => {
           </div>
         </div>
         <div id="gallery" className="m-5">
-          <Gallery />
+          {/* <Gallery /> */}
         </div>
       </div>
     </HomeLayout>

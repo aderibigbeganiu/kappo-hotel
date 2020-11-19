@@ -20,7 +20,7 @@ const HomeNavbar = () => {
               <li className="nav-item active">
                 <Link
                   className={navStyle.navItem}
-                  activeClassName={navStyle.activeNavItem}
+                  activeclassname={navStyle.activeNavItem}
                   to="/"
                 >
                   HOME
@@ -29,7 +29,7 @@ const HomeNavbar = () => {
               <li className="nav-item">
                 <a
                   className={navStyle.navItem}
-                  activeClassName={navStyle.activeNavItem}
+                  activeclassname={navStyle.activeNavItem}
                   href="#gallery"
                 >
                   GALLERY
@@ -38,7 +38,7 @@ const HomeNavbar = () => {
               <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeClassName={navStyle.activeNavItem}
+                  activeclassname={navStyle.activeNavItem}
                   to="/about"
                 >
                   ABOUT US
@@ -47,7 +47,7 @@ const HomeNavbar = () => {
               {/* <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeClassName={navStyle.activeNavItem}
+                  activeclassname={navStyle.activeNavItem}
                   to="services"
                 >
                   SERVICES & AMENITIES
@@ -56,7 +56,7 @@ const HomeNavbar = () => {
               <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeClassName={navStyle.activeNavItem}
+                  activeclassname={navStyle.activeNavItem}
                   to="/contact"
                 >
                   CONTACT
@@ -65,7 +65,7 @@ const HomeNavbar = () => {
               {/* <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeClassName={navStyle.activeNavItem}
+                  activeclassname={navStyle.activeNavItem}
                   to="/Offer"
                 >
                   OFFERS
