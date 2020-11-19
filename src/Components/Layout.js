@@ -10,16 +10,6 @@ const Layout = props => {
   return (
     <div className={layoutStyle.container}>
       <Helmet title={`${props.name} • KAPPO HOTEL & SUITES`} defer={false}>
-        <meta property="og:url" content="/" />
-        <meta
-          property="og:title"
-          content={`${props.name} • KAPPO HOTEL & SUITES`}
-        />
-        <meta
-          property="og:description"
-          content="Excellent Customer Experience within high standard facilities"
-        />
-        <meta property="og:image" content="../../static/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"

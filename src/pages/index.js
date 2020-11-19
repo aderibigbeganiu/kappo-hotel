@@ -3,9 +3,11 @@ import { Button, Col, Row } from "react-bootstrap"
 import HomeLayout from "../Components/homeLayout"
 import Gallery from "../Components/gallery"
 import indexStyle from "./indexStyle.module.scss"
+import SEO from "../Components/seo"
 const Home = () => {
   return (
     <HomeLayout name="Home">
+      <SEO title="Home" />
       <Row className={indexStyle.row}>
         <Col md={6} className="p-5">
           <img
