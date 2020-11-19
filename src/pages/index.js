@@ -4,10 +4,27 @@ import HomeLayout from "../Components/homeLayout"
 import Gallery from "../Components/gallery"
 import indexStyle from "./indexStyle.module.scss"
 import SEO from "../Components/seo"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "../../static/favicon.ico"
 const Home = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          keywords
+          siteUrl
+        }
+      }
+    }
+  `)
+  const description = data.site.siteMetadata.title
+  const image = Img
   return (
     <HomeLayout name="Home">
-      <SEO title="Home" />
+      <SEO title="Home" description={description} image={image} />
       <Row className={indexStyle.row}>
         <Col md={6} className="p-5">
           <img
