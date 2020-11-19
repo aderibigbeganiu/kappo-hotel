@@ -30,7 +30,7 @@ const Layout = props => {
       <Jumbotron className={layoutStyle.cover}>
         <Navbar />
       </Jumbotron>
-      <div className="container m-5">{props.children}</div>
+      <div className="container">{props.children}</div>
       <Footer />
     </div>
   )
