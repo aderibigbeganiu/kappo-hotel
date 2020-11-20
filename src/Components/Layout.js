@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet"
 const Layout = props => {
   return (
     <div className={layoutStyle.container}>
-      <Helmet title={`${props.name} • KAPPO HOTEL & SUITES`} defer={false}>
+      <Helmet title={`${props.name} • KAPPO HOTELS & SUITES`} defer={false}>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"

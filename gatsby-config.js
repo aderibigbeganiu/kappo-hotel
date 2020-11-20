@@ -6,10 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: `KAPPO HOTEL & SUITES`,
+    title: `KAPPO HOTELS & SUITES`,
     siteUrl: `https://www.kappohotel.com`,
     description: `Excellent Customer Experience within high standard facilities`,
-    author: `kappohotel`,
+    author: `kappohotels`,
     keywords: [
       "hotels in badagry",
       "hotel",
