@@ -4,11 +4,47 @@ import Navbar from "./Navbar"
 import "bootstrap/dist/css/bootstrap.min.css"
 import layoutStyle from "./layout.module.scss"
 import { Jumbotron } from "react-bootstrap"
-import { Helmet } from "react-helmet"
+import Helmet from "react-helmet"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Layout = props => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          keywords
+          siteUrl
+        }
+      }
+    }
+  `)
   return (
     <div className={layoutStyle.container}>
+      <GatsbySeo
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
+        canonical={data.site.siteMetadata.siteUrl}
+        openGraph={{
+          url: data.site.siteMetadata.siteUrl,
+          title: data.site.siteMetadata.title,
+          description: data.site.siteMetadata.description,
+          images: [
+            {
+              url: "https://kappohotel.com/logo.jpg",
+            },
+          ],
+          site_name: data.site.siteMetadata.siteUrl,
+        }}
+        twitter={{
+          handle: "@kappohotels",
+          site: "@kappohotels",
+          cardType: "summary_large_image",
+        }}
+      />
       <Helmet title={`${props.name} • KAPPO HOTELS & SUITES`} defer={false}>
         <link
           rel="stylesheet"

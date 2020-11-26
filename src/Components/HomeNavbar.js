@@ -1,44 +1,40 @@
 import { Link } from "gatsby"
 import React from "react"
 import navStyle from "./navStyle.module.scss"
+import Logo from "../../static/logo.jpg"
 
-const HomeNavbar = () => {
+const Navbar = () => {
   return (
     <>
       <span className="d-none d-md-block">
         <nav className="navbar navbar-expand-md m-0 p-0">
           <Link className="navbar-brand" to="/">
-            <img
-              src="https://kappohotels.com/wp-content/uploads/2020/05/cropped-hotel-LOGO-scaled-1-192x192.jpg"
-              alt="home"
-              height="80"
-              width="100"
-            />
+            <img src={Logo} alt="home" height="80" width="100" />
           </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <Link
                   className={navStyle.navItem}
-                  activeclassname={navStyle.activeNavItem}
+                  activeClassName={navStyle.activeNavItem}
                   to="/"
                 >
                   HOME
                 </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className={navStyle.navItem}
-                  activeclassname={navStyle.activeNavItem}
-                  href="#gallery"
+                  activeClassName={navStyle.activeNavItem}
+                  to="../#gallery"
                 >
                   GALLERY
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeclassname={navStyle.activeNavItem}
+                  activeClassName={navStyle.activeNavItem}
                   to="/about"
                 >
                   ABOUT US
@@ -47,7 +43,7 @@ const HomeNavbar = () => {
               {/* <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeclassname={navStyle.activeNavItem}
+                  activeClassName={navStyle.activeNavItem}
                   to="services"
                 >
                   SERVICES & AMENITIES
@@ -56,7 +52,16 @@ const HomeNavbar = () => {
               <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeclassname={navStyle.activeNavItem}
+                  activeClassName={navStyle.activeNavItem}
+                  to="/events"
+                >
+                  EVENTS
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className={navStyle.navItem}
+                  activeClassName={navStyle.activeNavItem}
                   to="/contact"
                 >
                   CONTACT
@@ -65,7 +70,7 @@ const HomeNavbar = () => {
               {/* <li className="nav-item">
                 <Link
                   className={navStyle.navItem}
-                  activeclassname={navStyle.activeNavItem}
+                  activeClassName={navStyle.activeNavItem}
                   to="/Offer"
                 >
                   OFFERS
@@ -77,12 +82,7 @@ const HomeNavbar = () => {
       </span>
       <nav className="navbar navbar-dark d-sm-block d-md-none">
         <Link className="navbar-brand" to="/">
-          <img
-            src="https://kappohotels.com/wp-content/uploads/2020/05/cropped-hotel-LOGO-scaled-1-192x192.jpg"
-            alt="home"
-            height="50"
-            width="60"
-          />
+          <img src={Logo} alt="home" height="50" width="60" />
         </Link>
         <button
           className="navbar-toggler"
@@ -105,9 +105,9 @@ const HomeNavbar = () => {
               </Link>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#gallery">
+              <Link className="nav-link" to="../#gallery">
                 GALLERY
-              </a>
+              </Link>
             </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/about/">
@@ -119,6 +119,11 @@ const HomeNavbar = () => {
                 SERVICES & AMENITIES
               </Link>
             </li> */}
+            <li className="nav-item active">
+              <Link className="nav-link" to="/events">
+                EVENTS
+              </Link>
+            </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/contact">
                 CONTACT US
@@ -136,4 +141,4 @@ const HomeNavbar = () => {
   )
 }
 
-export default HomeNavbar
+export default Navbar

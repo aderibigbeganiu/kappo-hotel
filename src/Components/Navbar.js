@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import navStyle from "./navStyle.module.scss"
+import Logo from "../../static/logo.jpg"
 
 const Navbar = () => {
   return (
@@ -8,12 +9,7 @@ const Navbar = () => {
       <span className="d-none d-md-block">
         <nav className="navbar navbar-expand-md m-0 p-0">
           <Link className="navbar-brand" to="/">
-            <img
-              src="https://kappohotels.com/wp-content/uploads/2020/05/cropped-hotel-LOGO-scaled-1-192x192.jpg"
-              alt="home"
-              height="80"
-              width="100"
-            />
+            <img src={Logo} alt="home" height="80" width="100" />
           </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
@@ -57,6 +53,15 @@ const Navbar = () => {
                 <Link
                   className={navStyle.navItem}
                   activeClassName={navStyle.activeNavItem}
+                  to="/events"
+                >
+                  EVENTS
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className={navStyle.navItem}
+                  activeClassName={navStyle.activeNavItem}
                   to="/contact"
                 >
                   CONTACT
@@ -77,12 +82,7 @@ const Navbar = () => {
       </span>
       <nav className="navbar navbar-dark d-sm-block d-md-none">
         <Link className="navbar-brand" to="/">
-          <img
-            src="https://kappohotels.com/wp-content/uploads/2020/05/cropped-hotel-LOGO-scaled-1-192x192.jpg"
-            alt="home"
-            height="50"
-            width="60"
-          />
+          <img src={Logo} alt="home" height="50" width="60" />
         </Link>
         <button
           className="navbar-toggler"
@@ -119,6 +119,11 @@ const Navbar = () => {
                 SERVICES & AMENITIES
               </Link>
             </li> */}
+            <li className="nav-item active">
+              <Link className="nav-link" to="/events">
+                EVENTS
+              </Link>
+            </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/contact">
                 CONTACT US

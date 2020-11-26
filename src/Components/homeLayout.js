@@ -1,25 +1,50 @@
 import React from "react"
 import Footer from "./Footer"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import homelayoutStyle from "./homeLayout.module.scss"
-import { Jumbotron } from "react-bootstrap"
-import { Helmet } from "react-helmet"
+import { Jumbotron, Button } from "react-bootstrap"
+import Helmet from "react-helmet"
 import HomeNavbar from "./HomeNavbar"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const HomeLayout = props => {
   const data = useStaticQuery(graphql`
-    {
+    query {
       site {
         siteMetadata {
           title
           description
+          author
+          keywords
+          siteUrl
         }
       }
     }
   `)
   return (
     <div className={homelayoutStyle.container}>
+      <GatsbySeo
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
+        canonical={data.site.siteMetadata.siteUrl}
+        openGraph={{
+          url: data.site.siteMetadata.siteUrl,
+          title: data.site.siteMetadata.title,
+          description: data.site.siteMetadata.description,
+          images: [
+            {
+              url: "https://kappohotel.com/logo.jpg",
+            },
+          ],
+          site_name: data.site.siteMetadata.siteUrl,
+        }}
+        twitter={{
+          handle: "@kappohotels",
+          site: "@kappohotels",
+          cardType: "summary_large_image",
+        }}
+      />
       <Helmet title={`${props.name} • KAPPO HOTELS & SUITES`} defer={false}>
         <link
           rel="stylesheet"
@@ -48,13 +73,11 @@ const HomeLayout = props => {
             {data.site.siteMetadata.description}
           </p>
           <p className={homelayoutStyle.coverBtn}>
-            <Link
-              className="btn btn-primary btn-lg"
-              to="/contact"
-              role="button"
-            >
-              CONTACT US
-            </Link>
+            <a href="tel:+2349040075259">
+              <Button varient="primary" size="lg">
+                Book Now
+              </Button>
+            </a>
           </p>
         </div>
       </Jumbotron>

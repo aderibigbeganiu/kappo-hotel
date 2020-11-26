@@ -4,7 +4,7 @@ import Layout from "../Components/Layout"
 
 function Contact() {
   return (
-    <Layout>
+    <Layout name="Contact">
       <Row className="p-2">
         <Col md={6}>
           <form>

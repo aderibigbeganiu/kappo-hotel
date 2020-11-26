@@ -67,11 +67,20 @@ const Footer = () => {
                 <i className="fab fa-twitter" style={{ width: "15px" }}></i>
               </span>
             </li>
-            <li className="list-inline-item text-white">
-              <span className={footerStyle.round}>
-                <i className="fab fa-facebook-f" style={{ width: "15px" }}></i>
-              </span>
-            </li>
+            <a
+              href="https://m.facebook.com/StandardHotelinTheHeartOfBadagry/"
+              target="blank"
+              className="text-white"
+            >
+              <li className="list-inline-item text-white">
+                <span className={footerStyle.round}>
+                  <i
+                    className="fab fa-facebook-f"
+                    style={{ width: "15px" }}
+                  ></i>
+                </span>
+              </li>
+            </a>
             <li className="list-inline-item text-white">
               <span className={footerStyle.round}>
                 <i className="fab fa-youtube" style={{ width: "15px" }}></i>

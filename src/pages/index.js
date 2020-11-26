@@ -2,10 +2,13 @@ import React from "react"
 import { Button, Col, Row } from "react-bootstrap"
 import HomeLayout from "../Components/homeLayout"
 import Gallery from "../Components/gallery"
+import Event from "../Components/event"
 import indexStyle from "./indexStyle.module.scss"
 import SEO from "../Components/seo"
 import { graphql, useStaticQuery } from "gatsby"
 import aboutUs from "../../static/about-us.png"
+import Deluxe from "../../static/Deluxe.jpeg"
+
 const Home = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -47,8 +50,8 @@ const Home = ({ location }) => {
         <Col md={6} className="p-5">
           <h2 className={indexStyle.staySafe}>Stay Safe!</h2>
           <h4 className={indexStyle.welcome}>Welcome to</h4>
-          <h1 className={indexStyle.title}>KAPPO HOTEL & SUITES</h1>
-          <p className={indexStyle.p}>
+          <h1 className={indexStyle.title}>KAPPO HOTELS & SUITES</h1>
+          {/* <p className={indexStyle.p}>
             Curabitur aliquet quam id dui posuere blandit. Nulla porttitor
             accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula
             elementum sed sit amet dui. Pellentesque in ipsum id orci porta
@@ -57,7 +60,7 @@ const Home = ({ location }) => {
             Sed porttitor lectus nibh. Proin eget tortor risus. Donec
             sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl
             tempus
-          </p>
+          </p> */}
         </Col>
       </Row>
       <div className="container">
@@ -124,13 +127,15 @@ const Home = ({ location }) => {
               </Col>
               <Col md={6} className="mt-5 mb-2">
                 <h4>Standard Room</h4>
-                <p>From ₦30,000.00 / Night</p>
-                <p>
+                <p>From ₦7,000.00 / Night</p>
+                {/* <p>
                   Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                   Donec sollicitudin molestie malesuada. Curabitur arcu erat,
                   accumsan id imperdiet et, porttitor at sem.
-                </p>
-                <Button varient="primary">Book Now</Button>
+                </p> */}
+                <a href="tel:+2349040075259">
+                  <Button varient="primary">Book Now</Button>
+                </a>
               </Col>
             </Row>
           </div>
@@ -150,13 +155,15 @@ const Home = ({ location }) => {
               </Col>
               <Col md={6} className="mt-5 mb-2">
                 <h4>Classic Room</h4>
-                <p>From ₦50,000.00 / Night</p>
-                <p>
+                <p>From ₦8,000.00 / Night</p>
+                {/* <p>
                   Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                   Donec sollicitudin molestie malesuada. Curabitur arcu erat,
                   accumsan id imperdiet et, porttitor at sem.
-                </p>
-                <Button varient="primary">Book Now</Button>
+                </p> */}
+                <a href="tel:+2349040075259">
+                  <Button varient="primary">Book Now</Button>
+                </a>
               </Col>
             </Row>
           </div>
@@ -168,27 +175,29 @@ const Home = ({ location }) => {
           >
             <Row className="m-2" style={{ backgroundColor: "#E5E5E5" }}>
               <Col md={6}>
-                <img
-                  src="https://thegeorgelagos.com/wp-content/uploads/2018/08/Deluxe-Room-101c-768x513.jpg"
-                  alt="standard-room"
-                  className="img-fluid"
-                />
+                <img src={Deluxe} alt="standard-room" className="img-fluid" />
               </Col>
               <Col md={6} className="mt-5 mb-2">
                 <h4>Deluxe Room</h4>
-                <p>From ₦80,000.00 / Night</p>
-                <p>
+                <p>From ₦10,000.00 / Night</p>
+                {/* <p>
                   Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                   Donec sollicitudin molestie malesuada. Curabitur arcu erat,
                   accumsan id imperdiet et, porttitor at sem.
-                </p>
-                <Button varient="primary">Book Now</Button>
+                </p> */}
+                <a href="tel:+2349040075259">
+                  <Button varient="primary">Book Now</Button>
+                </a>
               </Col>
             </Row>
           </div>
         </div>
         <div id="gallery" className="m-5">
           {/* <Gallery /> */}
+        </div>
+        <div id="event" className="m-5">
+          <h1 className={indexStyle.events}>Events</h1>
+          <Event />
         </div>
       </div>
     </HomeLayout>
