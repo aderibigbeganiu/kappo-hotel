@@ -192,6 +192,16 @@ const Home = ({ location }) => {
           <h1 className={indexStyle.events}>Events</h1>
           <Event />
         </div>
+        <div id="youtube" className="m-5">
+          <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/SVH5sSrWeOc"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </HomeLayout>
   )

@@ -127,7 +127,7 @@ const Footer = () => {
       </div>
       <hr className="text-white d-sm-block d-md-none" />
       <div className="text-center text-small text-secondary mt-3">
-        © 2020 BY KAPPO HOTELS & SUITES. ALL RIGHTS RESERVED
+        <small>© 2020 BY KAPPO HOTELS & SUITES. ALL RIGHTS RESERVED</small>
       </div>
     </footer>
   )
