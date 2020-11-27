@@ -202,6 +202,9 @@ const Home = ({ location }) => {
             allowfullscreen
           ></iframe>
         </div>
+        <div className="m-1 d-flex justify-content-center">
+          <h5>Night Club - Friday, Saturday and Sunday</h5>
+        </div>
       </div>
     </HomeLayout>
   )
