@@ -9,7 +9,10 @@ const About = () => {
         <img src={Chairman} height="250" width="200" className="m-2" />
       </div>
       <div className="d-flex justify-content-center">
-        <h3>Chairman Kappo Hotels</h3>
+        <h5>Kappo Babatunde Nudewhenu</h5>
+      </div>
+      <div className="d-flex justify-content-center">
+        <small>(Chairman Kappo Hotels)</small>
       </div>
     </Layout>
   )

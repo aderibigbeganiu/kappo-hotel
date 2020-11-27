@@ -13,25 +13,25 @@ const events = () => {
     <>
       <div class="card-deck">
         <div class="card">
-          <img src={Event7} class="card-img-top" alt="..." />
+          <img src={Event7} class="card-img-top" alt="event-photo" />
         </div>
         <div class="card">
-          <img src={Event2} class="card-img-top" alt="..." />
+          <img src={Event2} class="card-img-top" alt="event-photo" />
         </div>
         <div class="card">
-          <img src={Event3} class="card-img-top" alt="..." />
+          <img src={Event3} class="card-img-top" alt="event-photo" />
         </div>
       </div>
 
       <div class="card-deck">
         <div class="card">
-          <img src={Event4} class="card-img-top" alt="..." />
+          <img src={Event4} class="card-img-top" alt="event-photo" />
         </div>
         <div class="card">
-          <img src={Event5} class="card-img-top" alt="..." />
+          <img src={Event5} class="card-img-top" alt="event-photo" />
         </div>
         <div class="card">
-          <img src={Event6} class="card-img-top" alt="..." />
+          <img src={Event6} class="card-img-top" alt="event-photo" />
         </div>
       </div>
     </>

@@ -4,7 +4,6 @@ import HomeLayout from "../Components/homeLayout"
 import Gallery from "../Components/gallery"
 import Event from "../Components/event"
 import indexStyle from "./indexStyle.module.scss"
-import SEO from "../Components/seo"
 import { graphql, useStaticQuery } from "gatsby"
 import aboutUs from "../../static/about-us.png"
 import Deluxe from "../../static/Deluxe.jpeg"
@@ -31,12 +30,6 @@ const Home = ({ location }) => {
   const pathname = location.pathname
   return (
     <HomeLayout name="Home">
-      <SEO
-        title={title}
-        description={description}
-        image={image}
-        pathname={pathname}
-      />
       <Row className={indexStyle.row}>
         <Col md={6} className="p-5">
           <img
