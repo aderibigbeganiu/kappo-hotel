@@ -6,7 +6,11 @@ import Event from "../Components/event"
 import indexStyle from "./indexStyle.module.scss"
 import { graphql, useStaticQuery } from "gatsby"
 import aboutUs from "../../static/about-us.png"
+import Standard from "../../static/standard.jpeg"
+import Classic from "../../static/classic.jpeg"
 import Deluxe from "../../static/Deluxe.jpeg"
+import Club from "../../static/club.jpeg"
+import Bar from "../../static/bar.jpeg"
 
 const Home = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -56,6 +60,44 @@ const Home = ({ location }) => {
           </p> */}
         </Col>
       </Row>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={Club} class="mr-3" alt="Club" height="400" width="100%" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Club</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={Bar} class="mr-3" alt="Club" height="400" width="100%" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Bar</h3>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <div className="container">
         <h1 className={indexStyle.accommodation}>Accommodation</h1>
         <nav className="mt-5">
@@ -112,11 +154,7 @@ const Home = ({ location }) => {
           >
             <Row className="m-2" style={{ backgroundColor: "#E5E5E5" }}>
               <Col md={6}>
-                <img
-                  src="https://thegeorgelagos.com/wp-content/uploads/2018/09/Classic-Room-108a-768x513.jpg"
-                  alt="standard-room"
-                  className="img-fluid"
-                />
+                <img src={Standard} alt="standard-room" className="img-fluid" />
               </Col>
               <Col md={6} className="mt-5 mb-2">
                 <h4>Standard Room</h4>
@@ -140,11 +178,7 @@ const Home = ({ location }) => {
           >
             <Row className="m-2" style={{ backgroundColor: "#E5E5E5" }}>
               <Col md={6}>
-                <img
-                  src="https://thegeorgelagos.com/wp-content/uploads/2018/10/Deluxe-Suite-506-b-768x513.jpg"
-                  alt="classic-room"
-                  className="img-fluid"
-                />
+                <img src={Classic} alt="classic-room" className="img-fluid" />
               </Col>
               <Col md={6} className="mt-5 mb-2">
                 <h4>Classic Room</h4>
