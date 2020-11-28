@@ -60,45 +60,57 @@ const Home = ({ location }) => {
           </p> */}
         </Col>
       </Row>
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={Club} class="mr-3" alt="Club" height="400" width="100%" />
-            <div class="carousel-caption">
-              <h3>Club </h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src={Bar} class="mr-3" alt="Club" height="400" width="100%" />
-            <div class="carousel-caption">
-              <h3>Bar </h3>
-            </div>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
       <div className="container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide mt-3"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src={Club}
+                class="mr-3"
+                alt="Club"
+                height="400"
+                width="100%"
+              />
+              <div class="carousel-caption">
+                <h3>Club </h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src={Bar}
+                class="mr-3"
+                alt="Club"
+                height="400"
+                width="100%"
+              />
+              <div class="carousel-caption">
+                <h3>Bar </h3>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <h1 className={indexStyle.accommodation}>Accommodation</h1>
         <nav className="mt-5">
           <div className="nav nav-tabs" id="nav-tab" role="tablist">
