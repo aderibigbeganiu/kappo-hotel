@@ -68,14 +68,14 @@ const Home = ({ location }) => {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src={Club} class="mr-3" alt="Club" height="400" width="100%" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Club</h3>
+            <div class="carousel-caption">
+              <h3>Club </h3>
             </div>
           </div>
           <div class="carousel-item">
             <img src={Bar} class="mr-3" alt="Club" height="400" width="100%" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Bar</h3>
+            <div class="carousel-caption">
+              <h3>Bar </h3>
             </div>
           </div>
         </div>
