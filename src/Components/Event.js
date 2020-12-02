@@ -1,6 +1,4 @@
 import React from "react"
-import Layout from "../Components/Layout"
-import Event from "../../static/event.jpeg"
 import Event2 from "../../static/event2.jpeg"
 import Event3 from "../../static/event3.jpeg"
 import Event4 from "../../static/event4.jpeg"

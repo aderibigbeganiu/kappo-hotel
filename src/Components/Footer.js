@@ -101,7 +101,7 @@ const Footer = () => {
                 to="/about"
                 style={{ textDecoration: "none" }}
               >
-                About
+                About Us
               </Link>
             </li>
             <li className="m-3">
@@ -116,10 +116,10 @@ const Footer = () => {
             <li className="m-3">
               <Link
                 className="text-white"
-                to="/services"
+                to="/events"
                 style={{ textDecoration: "none" }}
               >
-                Services
+                Events
               </Link>
             </li>
           </ul>
