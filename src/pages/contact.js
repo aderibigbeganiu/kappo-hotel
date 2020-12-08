@@ -36,15 +36,16 @@ export class contact extends Component {
       .then(res => {
         this.setState({
           isLoading: false,
-          response: res.data,
+          response: "Message Sent Successfuly",
         })
       })
       .catch(err => {
         this.setState({
           isLoading: false,
-          response: err.message,
+          response: "Message not sent",
         })
       })
+    console.log(this.state.response)
     e.preventDefault()
   }
 
@@ -56,11 +57,7 @@ export class contact extends Component {
           <Col md={6}>
             {isLoading === true && "Sending message..."}
             {response ? (
-              response === "Network Error" ? (
-                <div className="text-center text-danger">{response}</div>
-              ) : (
-                <div className="text-center text-success">{response}</div>
-              )
+              <div className="text-center">{response}</div>
             ) : (
               <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
