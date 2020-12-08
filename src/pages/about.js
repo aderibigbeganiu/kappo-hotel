@@ -6,7 +6,13 @@ const About = () => {
   return (
     <Layout name="About">
       <div className="d-flex justify-content-center">
-        <img src={Chairman} height="250" width="200" className="m-2" />
+        <img
+          src={Chairman}
+          height="250"
+          width="200"
+          className="m-2"
+          alt="chair man"
+        />
       </div>
       <div className="d-flex justify-content-center">
         <h5>Kappo Babatunde Nudewhenu</h5>

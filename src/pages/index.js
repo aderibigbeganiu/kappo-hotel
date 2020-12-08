@@ -1,10 +1,10 @@
 import React from "react"
 import { Button, Col, Row } from "react-bootstrap"
 import HomeLayout from "../Components/homeLayout"
-import Gallery from "../Components/gallery"
+// import Gallery from "../Components/gallery"
 import Event from "../Components/event"
 import indexStyle from "./indexStyle.module.scss"
-import { graphql, useStaticQuery } from "gatsby"
+// import { graphql, useStaticQuery } from "gatsby"
 import aboutUs from "../../static/about-us.png"
 import Standard from "../../static/standard.jpeg"
 import Classic from "../../static/classic.jpeg"
@@ -13,25 +13,25 @@ import Club from "../../static/club.jpeg"
 import Bar from "../../static/bar.jpeg"
 
 const Home = ({ location }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          description
-          author
-          keywords
-          siteUrl
-          image
-        }
-      }
-    }
-  `)
-  const description = data.site.siteMetadata.description
-  const title = data.site.siteMetadata.title
-  const image = data.site.siteMetadata.image
-  // const image = Img
-  const pathname = location.pathname
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //         description
+  //         author
+  //         keywords
+  //         siteUrl
+  //         image
+  //       }
+  //     }
+  //   }
+  // `)
+  // const description = data.site.siteMetadata.description
+  // const title = data.site.siteMetadata.title
+  // const image = data.site.siteMetadata.image
+  // // const image = Img
+  // const pathname = location.pathname
   return (
     <HomeLayout name="Home">
       <Row className={indexStyle.row}>
@@ -246,6 +246,7 @@ const Home = ({ location }) => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            title="jsx-a11y/iframe-has-title"
           ></iframe>
         </div>
         <div className="m-1 d-flex justify-content-center">
