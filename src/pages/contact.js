@@ -36,16 +36,15 @@ export class contact extends Component {
       .then(res => {
         this.setState({
           isLoading: false,
-          response: "Message Sent Successfuly",
+          response: "Message was sent successfuly",
         })
       })
       .catch(err => {
         this.setState({
           isLoading: false,
-          response: "Message not sent",
+          response: "Message was not sent",
         })
       })
-    console.log(this.state.response)
     e.preventDefault()
   }
 
